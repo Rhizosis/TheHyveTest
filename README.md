@@ -31,13 +31,17 @@ Stdout: aabaabaa
 </pre>
 Invalid characters will be decoded / recoded as '?' (0x3F)
 
+<h3>Errors</h3>
+<pre>
 Application will error and exit when:
 - Invalid indicator char (first in pair)
 - Invalid value char (second in pair) when encoding for a plain char (indicator = 0)
 - Invalid offset repeat sequence indicator (larger than length of current decoded message)
 - Invalid offset repeat value (larger than current length of decoded message)
+</pre>
 
-Used test data in java:
+<h3>Test data</h3>
+<br/>
 <code>
 final byte test[] = new byte[] { 
 	(byte)0x30, 0x61, 
@@ -47,4 +51,5 @@ final byte test[] = new byte[] {
     (byte)0x33, 0x33,
 };
 </code>
+<br/>
 Encodes for: aabaabaa
