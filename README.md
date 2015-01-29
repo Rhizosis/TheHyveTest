@@ -17,7 +17,7 @@ The built jar (TheHyveTest-1.0.jar) can be found in target/
 <h3>Running:</h3>
 <pre>
 1. Default non-trivial implementation  
-> java -jar target/TheHyveTest-1.0.jar < binaries/assignmentTestData.bin 2> binaries/assignmentTestData-NonTrivial.bin
+> java -jar target/TheHyveTest-1.0.jar &lt; binaries/assignmentTestData.bin 2> binaries/assignmentTestData-NonTrivial.bin
 
 Stdout: aabaabaa
 </pre>
@@ -25,7 +25,7 @@ Stdout: aabaabaa
 <pre>
 2. Default trivial implementation
 > SET USE_TRIVIAL_IMPLEMENTATION=1
-> java -jar target/TheHyveTest-1.0.jar < binaries/assignmentTestData.bin 2> binaries/assignmentTestData-Trivial.bin
+> java -jar target/TheHyveTest-1.0.jar &lt; binaries/assignmentTestData.bin 2> binaries/assignmentTestData-Trivial.bin
 
 Stdout: aabaabaa
 </pre>
